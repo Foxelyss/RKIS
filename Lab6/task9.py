@@ -1,7 +1,14 @@
-x = 0
-array = []
+x = int(input("Введите число для поиска: "))
+array = list(
+    map(int, input("Введите элементы массива через пробел: ").split()))
 
-if array.count(x) >= x:
-    print("yes")
+element_found = False
+for i in array:
+    if x == i:
+        element_found = True
+        break
+
+if element_found:
+    print("Элемент имеется")
 else:
-    print("no")
+    print("Такого элемента нет")
