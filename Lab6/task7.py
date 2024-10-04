@@ -1,15 +1,12 @@
 x = int(input())
 
 
-def check_value_for_decrease(a):
-    first_value = 0
-    decreasing = True
-    while a > 0:
-        first_value = a % 10
-        a //= 10
-        if first_value > (a % 10) and a > 0:
-            decreasing = False
-    return decreasing
+def check_value_for_decrease(a = 0):
+    array_value = list(map(int, list(str(a))))
+    for x in range(len(array_value) - 1):
+        if array_value[x]  < array_value[x + 1]:
+            return False
+    return True
 
 
 print("Число - ", x)
