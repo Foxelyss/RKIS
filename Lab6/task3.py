@@ -7,5 +7,4 @@ def calculate_square_quantity_for_rectangle(width, length, cube_width):
     return (width * length) // (cube_width ** 2)
 
 
-print(f"Количество квадратов которых можно вырезать из этого прямоугольника = {
-      calculate_square_quantity_for_rectangle(a, b, c)}")
+print(f"Количество квадратов которых можно вырезать из этого прямоугольника = {calculate_square_quantity_for_rectangle(a, b, c)}")

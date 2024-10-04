@@ -13,5 +13,5 @@ def find_odd_items_multiplication(array):
 
 
 print("Массив чисел:", random_array)
-print("Умножение элентов с нечётными номерами:",
+print("Умножение элементов с нечётными номерами:",
       find_odd_items_multiplication(random_array))
