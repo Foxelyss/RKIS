@@ -12,14 +12,14 @@
 months = ["январь", "февраль", "март", "апрель", "май", "июнь",
           "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"]
 event_description = ["За окном падал белый снег", "Птицы пели прекрасные песни",
-                     "Солнце светило ярче чем когда-либо", "Урожай был невероятным", "За окном падал белый снег"]
+                     "Солнце светило ярче чем когда-либо", "Урожай был невероятным"]
 
 
 def season_events(number_of_month):
-    season = int(number_of_month/3)
+    season = int(number_of_month / 3) % 4
 
     print(f"Вы родились в месяце {
-          months[number_of_month-1]}. {event_description[season]}.")
+          months[number_of_month - 1]}. {event_description[season]}.")
 
 
 while True:
