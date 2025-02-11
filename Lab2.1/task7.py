@@ -1,3 +1,5 @@
+import re
+
 # Дан список со строками. Оставьте в этом списке только те строки, которые
 # начинаются на http://.
 strings = [
@@ -9,9 +11,10 @@ strings = [
     "http://foxelyss.github.io"
 ]
 
+query = re.compile("^(http:\/\/)")
 
 for x in strings.copy():
-    if not x.startswith("http://"):
+    if query.match(x) is None:
         strings.remove(x)
 
 print(strings)
