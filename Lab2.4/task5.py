@@ -1,3 +1,10 @@
+# С помощью конструкции try..catch, обработайте участки кода в которых могут
+# возникнуть исключения
+# Напишите enum для математических операций (+, -, *, /). Создайте функцию,
+# которая будет принимать 2 числа и операцию. Внутри функции создайте switch, который
+# будет содержать case для каждой операции. Функция должна возвращать 4 значения
+# (firstNumber, secondNumber, operation, result);
+
 from enum import Enum
 
 
@@ -8,7 +15,7 @@ class MathemathicalOperation(Enum):
     DIVISION = 3
 
 
-def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -> float:
+def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -> tuple:
     result = 0
 
     if not isinstance(a, (float, int, complex)) or not isinstance(a, (float, int, complex)) or\
@@ -32,19 +39,19 @@ def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -
 try:
     print(calculate_operation(12, 3.4, MathemathicalOperation.DIVISION))
 except Exception as a:
-    print(a.with_traceback(a.__traceback__))
+    print(a)
 
 try:
     print(calculate_operation(12, 0, MathemathicalOperation.DIVISION))
 except Exception as a:
-    print(a.with_traceback(a.__traceback__))
+    print(a)
 
 try:
     print(calculate_operation(12, 3.4, 123))
 except Exception as a:
-    print(a.with_traceback(a.__traceback__))
+    print(a)
 
 try:
     print(calculate_operation("12", "3.4", MathemathicalOperation.DIVISION))
 except Exception as a:
-    print(a.with_traceback(a.__traceback__))
+    print(a)
