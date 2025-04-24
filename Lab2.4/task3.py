@@ -18,7 +18,7 @@ def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -
 
     if not isinstance(a, (float, int, complex)) or not isinstance(a, (float, int, complex)) or\
             operation not in MathemathicalOperation:
-        raise Exception("Неправильные типы данных на входе")
+        raise TypeError("Неправильные типы данных на входе")
 
     if operation is MathemathicalOperation.PLUS:
         result = a+b

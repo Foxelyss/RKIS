@@ -20,7 +20,7 @@ def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -
 
     if not isinstance(a, (float, int, complex)) or not isinstance(a, (float, int, complex)) or\
             operation not in MathemathicalOperation:
-        raise Exception("Неправильные типы данных на входе")
+        raise TypeError("Неправильные типы данных на входе")
 
     if operation is MathemathicalOperation.PLUS:
         result = a+b
@@ -43,15 +43,15 @@ except Exception as a:
 
 try:
     print(calculate_operation(12, 0, MathemathicalOperation.DIVISION))
-except Exception as a:
+except ZeroDivisionError as a:
     print(a)
 
 try:
     print(calculate_operation(12, 3.4, 123))
-except Exception as a:
+except TypeError as a:
     print(a)
 
 try:
     print(calculate_operation("12", "3.4", MathemathicalOperation.DIVISION))
-except Exception as a:
+except TypeError as a:
     print(a)
