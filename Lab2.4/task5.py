@@ -13,6 +13,7 @@ class MathemathicalOperation(Enum):
     MINUS = 1
     MULTIPLICATION = 2
     DIVISION = 3
+    SPECIAL_NOT_SUPPORTED = -1
 
 
 def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -> tuple:
@@ -31,7 +32,7 @@ def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -
     elif operation is MathemathicalOperation.DIVISION:
         result = a/b
     else:
-        raise Exception("Операция не определена!")
+        raise NotImplementedError("Операция не определена!")
 
     return (a, b, operation, result)
 
@@ -54,4 +55,9 @@ except TypeError as a:
 try:
     print(calculate_operation("12", "3.4", MathemathicalOperation.DIVISION))
 except TypeError as a:
+    print(a)
+
+try:
+    print(calculate_operation(321, 123, MathemathicalOperation.SPECIAL_NOT_SUPPORTED))
+except NotImplementedError as a:
     print(a)

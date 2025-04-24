@@ -29,7 +29,7 @@ def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -
     elif operation is MathemathicalOperation.DIVISION:
         result = a/b
     else:
-        raise Exception("Операция не определена!")
+        raise NotImplementedError("Операция не определена!")
 
     return (a, b, operation, result)
 
