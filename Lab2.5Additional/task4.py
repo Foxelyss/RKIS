@@ -13,3 +13,10 @@ class Soda:
             print("Обычная газировка")
         else:
             print(f"Газировка и {self.special_ingredient}")
+
+a = Soda("Лайм")
+a.show_my_drink()
+
+b = Soda()
+b.show_my_drink()
+
