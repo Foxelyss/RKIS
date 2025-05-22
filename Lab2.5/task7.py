@@ -4,7 +4,7 @@
 x, y = int(input("Введите x:")), int(input("Введите y:"))
 radius = int(input("Введите радиус:"))
 
-if x ** 2 + y ** 2 == radius ** 2:
+if x ** 2 + y ** 2 <= radius ** 2:
     print("Точка принадлежит")
 else:
     print("Точка не принадлежит")
