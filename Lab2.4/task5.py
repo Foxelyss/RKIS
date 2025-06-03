@@ -19,7 +19,7 @@ class MathemathicalOperation(Enum):
 def calculate_operation(a: float, b: float, operation: MathemathicalOperation) -> tuple:
     result = 0
 
-    if not isinstance(a, (float, int, complex)) or not isinstance(a, (float, int, complex)) or\
+    if not isinstance(a, (float, int, complex)) or not isinstance(b, (float, int, complex)) or\
             operation not in MathemathicalOperation:
         raise TypeError("Неправильные типы данных на входе")
 
