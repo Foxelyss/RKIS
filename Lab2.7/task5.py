@@ -19,7 +19,7 @@ clients = [
     FitnessCentreClient(1, 2014, 5, 321),
     FitnessCentreClient(1, 2018, 1, 123),
     FitnessCentreClient(1, 2023, 3, 13),
-    FitnessCentreClient(1, 2023, 3, 321 - 14)
+    FitnessCentreClient(1, 2023, 3, 321 - 13)
 ]
 
 years = {}
@@ -35,4 +35,6 @@ max_duration_in_minutes = max(years.values())
 
 for x, y in years.items():
     if y == max_duration_in_minutes and x <= year:
-        print(x)
+        year = x
+
+print(year)
