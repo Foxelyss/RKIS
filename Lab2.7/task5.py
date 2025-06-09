@@ -19,7 +19,11 @@ clients = [
     FitnessCentreClient(1, 2014, 5, 321),
     FitnessCentreClient(1, 2018, 1, 123),
     FitnessCentreClient(1, 2023, 3, 13),
-    FitnessCentreClient(1, 2023, 3, 321 - 13)
+    FitnessCentreClient(1, 2023, 3, 321 - 13),
+    FitnessCentreClient(1, 2017, 1, 5),
+    FitnessCentreClient(1, 2018, 4, 6),
+    FitnessCentreClient(1, 2014, 2, 31),
+    FitnessCentreClient(1, 2018, 3, 13),
 ]
 
 years = {}

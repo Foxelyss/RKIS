@@ -12,7 +12,6 @@ class FitnessCentreClient:
 
 clients = [
     FitnessCentreClient(1, 2007, 1, 123),
-    FitnessCentreClient(1, 2008, 4, 13),
     FitnessCentreClient(1, 2014, 5, 321),
     FitnessCentreClient(1, 2018, 1, 123),
     FitnessCentreClient(1, 2023, 3, 13),
