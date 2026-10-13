@@ -1,3 +1,5 @@
+# Напишите функцию для нахождения произведения чисел, которые стоят на не четных местах
+
 from random import randrange
 
 random_array = [randrange(-10, 11) for x in range(10)]

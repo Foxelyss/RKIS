@@ -1,3 +1,5 @@
+# а) сумму всех целых чисел от 100 до 500
+
 all_numbers = list(range(100, 501))
 sum_of_all_numbers = sum(all_numbers)
 

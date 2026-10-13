@@ -1,3 +1,5 @@
+# Дано число, верните его в обратном порядке
+
 x = int(input("Enter number to reverse: "))
 
 x_inversed = 0

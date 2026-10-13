@@ -1,3 +1,6 @@
+# Даны целочисленный массив nums и целочисленная переменная 
+# target, верните индексы двух чисел, сумма которых равна target
+
 nums = list(map(int, input("Enter array elements with spaces: ").split()))
 target = int(input("Enter target: "))
 
